@@ -1,2 +1,1 @@
-# rsschool-cv
-init: start project cv
+https://isaluk.github.io/rsschool-cv/cv
