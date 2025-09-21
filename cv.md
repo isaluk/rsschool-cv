@@ -98,3 +98,21 @@ _Ensures proper rendering in Outlook (Microsoft Office) while maintaining modern
 >  4. __Fallback Structure__ – Modern clients see the standard `<a>` tag while Outlook renders the VML version
 
 ---
+## Education
+
+__Gomel State Technical University named after P.O. Sukhoi__ <br>
+*2018–2020* | Faculty of Automated and Information Systems <br> 
+__Information Systems and Technologies__ (Second Higher Education)
+
+* Part-time (correspondence) program while exploring tech career paths
+
+__Belarusian State Agricultural Academy__ <br>
+*2014–2018* | Faculty of Accounting <br>
+__Accounting, Analysis and Audit__ (Specialist Diploma)
+
+---
+
+## Languages
+
+* __Russian:__ Native
+* __English:__ Basic (A1)
