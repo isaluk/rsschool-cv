@@ -22,3 +22,28 @@ Currently, I’m advancing my skills through the __RS School__ course to transit
 __Goal:__ Join an IT company where I can apply my current skills while growing as a frontend developer.
 
 ---
+
+## Skills
+
+### Frontend Development
+
+* HTML5 (semantic markup, accessibility)
+* Pug (Jade) – templating engine
+* CSS3 (Flexbox, Grid, animations)
+* LESS (variables, mixins, nesting)
+* JavaScript (ES6+ basics, DOM manipulation)
+
+### Design & Prototyping
+
+* Adobe Photoshop (basic image editing)
+* Figma (UI design, prototyping, components)
+* Version Control
+* Git (basic commands)
+
+### Workflow
+
+* Responsive design principles
+* Cross-browser compatibility
+* Email template development
+
+---
