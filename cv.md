@@ -47,3 +47,54 @@ __Goal:__ Join an IT company where I can apply my current skills while growing a
 * Email template development
 
 ---
+## Code Example
+
+### Email Button with MSO Fallback
+_Ensures proper rendering in Outlook (Microsoft Office) while maintaining modern email client compatibility._
+
+```
+<div>
+  <!--[if mso]>
+    <v:roundrect 
+      xmlns:v="urn:schemas-microsoft-com:vml" 
+      xmlns:w="urn:schemas-microsoft-com:office:word" 
+      href="http://example.com" 
+      style="height:40px;v-text-anchor:middle;width:200px;" 
+      arcsize="25%" 
+      stroke="f" 
+      fillcolor="#087bf7">
+      <w:anchorlock/>
+      <center>
+  <![endif]-->
+  
+  <a href="http://example.com"
+     style="background-color:#087bf7;
+            border-radius:10px;
+            color:#ffffff;
+            display:inline-block;
+            font-family:sans-serif;
+            font-size:13px;
+            font-weight:bold;
+            line-height:40px;
+            text-align:center;
+            text-decoration:none;
+            width:200px;
+            -webkit-text-size-adjust:none;">
+    Super button!
+  </a>
+  
+  <!--[if mso]>
+    </center>
+    </v:roundrect>
+  <![endif]-->
+</div>
+```
+
+> [!NOTE]
+>  __Key Technical Notes:__
+>  1. __MSO Conditional Comments__ – Targets Microsoft Outlook specifically
+>  2. __VML (Vector Markup Language)__ – Required for rounded corners in Outlook
+>  3. __Mobile Optimization__ – Inline styles and -webkit-text-size-adjust prevent iOS sizing issues
+>  4. __Fallback Structure__ – Modern clients see the standard `<a>` tag while Outlook renders the VML version
+
+---
