@@ -43,6 +43,41 @@ I am a Junior Frontend Developer and HTML Email Specialist. After earning a degr
 
 ---
 
+## Code Example
+
+### Codewars Kata: [Advanced Events](https://www.codewars.com/kata/52d4678038644497e900007c)
+
+_My solution to a JavaScript algorithmic challenge on Codewars._
+
+```javascript
+function Event() {
+  let events = [];
+  this.subscribe = function (...args) {
+    args.forEach((a) => {
+      if (typeof a === "function") {
+        events.push(a);
+      }
+    });
+  };
+  this.unsubscribe = function (...args) {
+    args.forEach((a) => {
+      if (typeof a === "function") {
+        let ind = events.lastIndexOf(a);
+        if (ind !== -1) {
+          events.splice(ind, 1);
+        }
+      }
+    });
+  };
+  this.emit = function (...args) {
+    const n = [...events];
+    n.forEach((a) => a.call(this, ...args));
+  };
+}
+```
+
+---
+
 ## Education
 
 ### RS School — JavaScript / Front-end Development
