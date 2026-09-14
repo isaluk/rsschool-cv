@@ -242,4 +242,15 @@ footer.cv__block {
 }
 .social-link:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+.social-link--tg {
+  background-color: transparent;
+  padding: 0;
+}
+.social-link--tg:hover {
+  box-shadow: none;
+  color: #7e8bfb;
+}
+.social-link--tg:hover .social-link__icon {
+  fill: #7e8bfb;
 }/*# sourceMappingURL=style.css.map */

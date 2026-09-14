@@ -280,4 +280,15 @@ footer.cv__block {
   &:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   }
+  &--tg {
+    background-color: transparent;
+    padding: 0;
+    &:hover {
+      box-shadow: none;
+      color: $color-secondary;
+      .social-link__icon {
+        fill: $color-secondary;
+      }
+    }
+  }
 }
