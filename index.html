@@ -2,14 +2,173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irina Saluk - CV</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
+<body class="cv">
+  <div class="cv__wrap">
+    <header class="header cv__block">
+      <div class="header__info">
+        <p class="header__greeting">Hello 👋🏻 I’m</p>
+        <h1 class="header__name">Irina Saluk</h1>
+        <h2 class="header__title">Junior Frontend Developer</h2>
+        <p class="header__location">📍 Buenos Aires, Argentina</p>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__link"><a href="#about">About Me</a></li>
+          <li class="nav__link"><a href="#skills">Skills</a></li>
+          <li class="nav__link"><a href="#experience">Experience</a></li>
+          <li class="nav__link"><a href="#code">Code Example</a></li>
+          <li class="nav__link"><a href="#education">Education</a></li>
+          <li class="nav__link"><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="cv__info">
+      <div class="cv__info-col">
+        <section id="about" class="cv__block about">
+          <h2 class="section__title">About Me</h2>
+          <div class="about__info">
+            <img src="assets/photo.jpg" alt="Irina Saluk" class="about__photo">
+            <p>I am a Junior Frontend Developer and HTML Email Specialist. After an accounting degree in 2018,
+              I&nbsp;earned a second degree in software engineering. Experienced in responsive HTML emails and landing
+              pages, I&nbsp;am now advancing my skills at <span class="accent">RS&nbsp;School</span> to transition into
+              full-span commercial
+              development.</p>
+          </div>
+          <a href="https://github.com/isaluk" class="social-link social-link--tg">
+            <svg aria-hidden="true" class="social-link__icon" viewBox="0 0 26 26">
+              <use href="assets/icons.svg#tg"></use>
+            </svg> @i_saluk</a>
+        </section>
+        <section id="experience" class="cv__block">
+          <h2 class="section__title">Experience & Projects</h2>
+          <div class="cubes">
+            <article class="cubes__item">
+              <span class="cubes__date">2020 - Present</span>
+              <h3 class="cubes__title">Freelance HTML Email & Frontend</h3>
+              <p class="cubes__text">Developed responsive HTML email templates, corporate signatures, and landing pages.
+              </p>
+              <a href="https://kwork.com/user/saluk_dev" target="_blank" class="cubes__link">Portfolio</a>
+            </article>
+            <article class="cubes__item cubes__item--dark">
+              <span class="cubes__date">2025 - 2026</span>
+              <h3 class="cubes__title">DevQuest (RS School Project)</h3>
+              <p class="cubes__text"> Web application developed using TypeScript, Vite, and Supabase. Implemented
+                authentication, protected routes, and game state management.
+              </p>
+              <a href="https://github.com/saluk-dev/devquest" target="_blank" class="cubes__link">GitHub</a>
+            </article>
+          </div>
+        </section>
+        <section id="education" class="cv__block">
+          <h2 class="section__title">Education</h2>
+          <div class="cubes">
+            <article class="cubes__item cubes__item--dark">
+              <span class="cubes__date">2025–2026</span>
+              <h3 class="cubes__title">RS School — JavaScript / Front-end Development</h3>
+              <a href="https://app.rs.school/certificate/iz3v519l" target="_blank" class="cubes__link">Certificate</a>
+            </article>
+            <article class="cubes__item">
+              <span class="cubes__date">2018 - 2020</span>
+              <h3 class="cubes__title">Gomel State Technical University named after P. O. Sukhoi</h3>
+              <p class="cubes__text"> Faculty of Automated and Information Systems. <strong>Software Engineer</strong>
+              </p>
+            </article>
+            <article class="cubes__item">
+              <span class="cubes__date">2018 - 2020</span>
+              <h3 class="cubes__title">Belarusian State Agricultural Academy</h3>
+              <p class="cubes__text"> Faculty of Accounting. <strong>Accounting, Analysis and
+                  Audit</strong>
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
+      <div class="cv__info-col">
+        <address class="cv__links">
+          <ul class="links">
+            <li class="links__item"><a href="mailto:salukwork@gmail.com">salukwork@gmail.com</a></li>
+            <li class="links__item"><a href="tel:+5491132981429">+54 (911) 32981429</a></li>
+          </ul>
+        </address>
+        <section id="skills" class="cv__block">
+          <h2 class="section__title">Skills</h2>
+          <ul class="section__list">
+            <li>HTML5 (semantic markup, accessibility) and CSS3 (Flexbox, Grid, animations)</li>
+            <li>JavaScript (ES6+ basics, DOM manipulation) and TypeScript</li>
+            <li>Pug (Jade) and LESS</li>
+            <li>Responsive HTML email templates and table-based layouts. Dark mode styling, email-safe CSS, and remote
+              image hostin</li>
+          </ul>
+        </section>
+        <section id="code" class="cv__block">
+          <h2 class="section__title">Code Example</h2>
+          <p>My solution to a JavaScript algorithmic challenge on Codewars. <br>Codewars Kata: <a
+              href="https://www.codewars.com/kata/52d4678038644497e900007c" target="_blank"
+              class="section__link">Advanced Events</a></p>
+          <div class="code-block">
+            <pre><code><span class="keyword">function</span> <span class="function">Event</span>() {
 
+  <span class="keyword">let</span> events = [];
+
+  <span class="keyword">this</span>.subscribe = <span class="keyword">function</span> (...args) {
+    args.forEach((a) =&gt; {
+      <span class="keyword">if</span> (<span class="keyword">typeof</span> a === <span class="string">"function"</span>) {
+        events.push(a);
+      }
+    });
+  };
+
+  <span class="keyword">this</span>.unsubscribe = <span class="keyword">function</span> (...args) {
+    args.forEach((a) =&gt; {
+      <span class="keyword">if</span> (<span class="keyword">typeof</span> a === <span class="string">"function"</span>) {
+        <span class="keyword">let</span> ind = events.lastIndexOf(a);
+
+        <span class="keyword">if</span> (ind !== -<span class="number">1</span>) {
+          events.splice(ind, <span class="number">1</span>);
+        }
+      }
+    });
+  };
+
+  <span class="keyword">this</span>.emit = <span class="keyword">function</span> (...args) {
+    <span class="keyword">const</span> n = [...events];
+    n.forEach((a) =&gt; a.call(<span class="keyword">this</span>, ...args));
+  };
+
+}</code></pre>
+          </div>
+        </section>
+        <section id="languages" class="cv__block">
+          <h2 class="section__title">Languages</h2>
+          <p><b>Russian:</b> Native</p>
+          <p><b>English:</b> A2. Regular conversational practice through frequent international travel, using English
+            for everyday communication.</p>
+          <p><b>Spanish:</b> A1 (Basic). Daily conversational practice through living in Buenos Aires, using Spanish for
+            everyday communication.</p>
+        </section>
+      </div>
+    </main>
+    <footer class="footer cv__block">
+      <a href="https://github.com/isaluk" class="social-link">
+        <svg aria-hidden="true" class="social-link__icon" viewBox="0 0 31 30">
+          <use href="assets/icons.svg#git-icon"></use>
+        </svg>
+        Irina Saluk, © 2026</a>
+      <a href="https://rs.school/" class="social-link">
+        <svg aria-hidden="true" class="social-link__icon social-link__icon--rss" viewBox="0 0 552.8 205.3">
+          <use href="assets/icons.svg#rs-school-logo"></use>
+        </svg></a>
+    </footer>
+  </div>
 </body>
 
 </html>
